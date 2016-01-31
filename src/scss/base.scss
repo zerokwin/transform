@@ -1,0 +1,109 @@
+@import "config";
+@import "mixins";
+@import "reset";
+
+.wrap {
+    position: relative;
+    margin: 0 auto;
+    width: 1400px;
+    color: $clr_text;
+
+    @extend %clearfix;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    height: 900px;
+
+    .cover {
+        position: absolute;
+        z-index: 1;
+        width: 633px;
+        height: 900px;
+        background-image: url(../images/cover.png);
+    }
+
+    video {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.main {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+.container {
+    margin: 0 auto;
+    width: $minwidth;
+}
+
+.header {
+    padding: 23px 0;
+    height: $h_header;
+
+    .logo {
+        display: block;
+        width: 253px;
+        height: 33px;
+        background-image: url(../images/logo.png);
+    }
+}
+
+.nav {
+    height: 64px;
+    background-color: rgba(27,34,35,.902);
+
+    .nav-list {
+        @extend %clearfix;
+
+        li {
+            float: left;
+        }
+
+        a {
+            position: relative;
+            display: block;
+            width: 200px;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 17px;
+                left: -1px;
+                width: 1px;
+                height: 30px;
+                background-color: #fff;
+            }
+        }
+    }
+}
+
+.location {
+    height: 32px;
+    line-height: 30px;
+
+    a {
+        color: #303030;
+        text-decoration: underline;
+
+        &.active {
+            color: $clr_hover;
+        }
+    }
+}
+
+.main-content {
+    padding: 64px 120px 100px 120px;
+    height: 1000px;
+    background-color: #fff;
+
+    h2 {
+        margin-bottom: 32px;
+    }
+}

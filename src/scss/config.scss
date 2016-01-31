@@ -1,0 +1,61 @@
+// color
+// text color
+$clr_text: #1b2223;  // text main color
+$clr_hover: #08b9bf;
+
+// button color
+$clr_button: #1cb394;
+
+// border color
+$clr_border: #ddd;
+$clr_border_input: #66afe9;
+
+// shadow color
+$clr_shadow_input: rgba(120,190,237,.5);
+
+// background color
+$clr_bg_body: #f4f4f4;
+
+// tips color
+$clr_error: #a94442;  // error
+$clr_success: #3c763d;  // success
+
+// disabled color
+$clr_disabled: #eee;
+$clr_disabled_text: #777;
+
+
+// font
+// font family
+$fontFamily: "STHeitiSC-Light","Source Han Sans-Light","Microsoft Yahei","SimHei","Helvetica Neue","Arial",sans-serif;
+$iconFontFamily: 'Glyphicons Halflings';
+
+// font size
+$fs_base: 14px;
+$fs_h1: 36px;
+$fs_h2: 30px;
+$fs_h3: 24px;
+$fs_h4: 18px;
+$fs_h5: 16px;
+$fs_h6: 12px;
+
+// line-height
+$lineHeight: 1;
+
+
+// layout
+// height
+$h_header: 80px;  // header height
+$h_footer: 50px;  // footer height
+
+// width
+$minwidth: 1000px;
+
+// amend
+$amend: 4px;  // inline-block
+$space: 20px;  // list li space
+$sp_input_h: 10px;  // input padding-left,padding-right
+$sp_input_v: 5px;  // input padding-top,padding-bottom
+
+// radius
+$radius_input: 2px;
