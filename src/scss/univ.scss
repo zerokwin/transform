@@ -2,10 +2,23 @@
 @import "mixins";
 
 .title_jp-univ {
-    margin-left: auto;
-    margin-right: auto;
     width: 414px;
     height: 69px;
     background-image: url(../images/title_jp-univ.png);
-    font-size: 0;
+}
+
+.opt {
+
+}
+
+.col_left .opt {
+
+}
+
+.col_right .opt {
+
+}
+
+.univ-list {
+    
 }

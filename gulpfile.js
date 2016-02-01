@@ -23,7 +23,11 @@ const src = {
 
         'base' : 'src/scss/base.scss',
 
-        'home' : 'src/scss/univ.scss'
+        'univ' : 'src/scss/univ.scss',
+
+        'univ-detail' : 'src/scss/univ-detail.scss',
+
+        'st-voice' : 'src/scss/st-voice.scss'
 
     },
 

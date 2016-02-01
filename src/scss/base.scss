@@ -62,23 +62,68 @@
     .nav-list {
         @extend %clearfix;
 
-        li {
+        >li {
+            position: relative;
             float: left;
+
+            .nav-list-sec {
+                display: none;
+                position: absolute;
+                z-index: 1;
+                top: 64px;
+                width: 100%;
+                height: 100%;
+
+                li {
+                    padding: 0 20px;
+                    width: 100%;
+                    height: 45px;
+                    background-color: rgb(27,34,35);
+                    text-align: center;
+                    line-height: 45px;
+
+                    &:not(:last-child) a {
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        border-bottom: 2px dotted #f1c40f;
+                        color: #f1c40f;
+                    }
+                }
+            }
+
+            &:hover > .nav-list-sec {
+                display: block;
+            }
         }
 
-        a {
+        >a {
             position: relative;
             display: block;
             width: 200px;
 
-            &::before {
-                content: '';
-                position: absolute;
-                top: 17px;
-                left: -1px;
-                width: 1px;
-                height: 30px;
-                background-color: #fff;
+            &:not(.online_assessment):not(.about_us) {
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 17px;
+                    left: 0;
+                    width: 1px;
+                    height: 30px;
+                    background-color: #fff;
+                }
+            }
+
+            &.our_team {
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 17px;
+                    right: 0;
+                    width: 1px;
+                    height: 30px;
+                    background-color: #fff;
+                }
             }
         }
     }
@@ -104,6 +149,28 @@
     background-color: #fff;
 
     h2 {
+        margin-left: auto;
+        margin-right: auto;
         margin-bottom: 32px;
+        font-size: 0;
     }
+
+    .main-content_inner {
+        @extend %clearfix;
+    }
+}
+
+%col {
+    width: 365px;
+    float: left;
+}
+
+.col_left {
+    @extend %col;
+
+    margin-right: 30px;
+}
+
+.col_right {
+    @extend %col;
 }

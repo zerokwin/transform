@@ -1,0 +1,35 @@
+@import "config";
+@import "mixins";
+
+.title_st-voices {
+    width: 414px;
+    height: 69px;
+    background-image: url(../images/title_studentvoices.png);
+}
+
+.list_st-voices {
+    @extend %clearfix;
+
+    li {
+        float: left;
+        margin-bottom: 30px;
+        width: 365px;
+        height: 600px;
+        background-color: #ddd;
+
+        &:nth-child(odd) {
+            margin-right: 30px;
+        }
+
+        img {
+            display: block;
+            width: 365px;
+            height: 365px;
+        }
+
+        .st-info {
+            width: 365px;
+            height: 235px;
+        }
+    }
+}
