@@ -31,7 +31,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+p {
   margin: 0;
   padding: 0; }
 
@@ -237,6 +238,27 @@ ol {
   .nav .nav-list > li {
     position: relative;
     float: left; }
+    .nav .nav-list > li > a {
+      position: relative;
+      display: block;
+      width: 200px;
+      height: 100%; }
+      .nav .nav-list > li > a:not(.online_assessment):not(.about_us)::before {
+        content: '';
+        position: absolute;
+        top: 17px;
+        left: 0;
+        width: 1px;
+        height: 30px;
+        background-color: #fff; }
+      .nav .nav-list > li > a.our_team::after {
+        content: '';
+        position: absolute;
+        top: 17px;
+        right: 0;
+        width: 1px;
+        height: 30px;
+        background-color: #fff; }
     .nav .nav-list > li .nav-list-sec {
       display: none;
       position: absolute;
@@ -251,34 +273,17 @@ ol {
         background-color: #1b2223;
         text-align: center;
         line-height: 45px; }
+        .nav .nav-list > li .nav-list-sec li a {
+          color: #f1c40f; }
         .nav .nav-list > li .nav-list-sec li:not(:last-child) a {
           display: block;
           width: 100%;
           height: 100%;
-          border-bottom: 2px dotted #f1c40f;
-          color: #f1c40f; }
-    .nav .nav-list > li:hover > .nav-list-sec {
-      display: block; }
-  .nav .nav-list > a {
-    position: relative;
-    display: block;
-    width: 200px; }
-    .nav .nav-list > a:not(.online_assessment):not(.about_us)::before {
-      content: '';
-      position: absolute;
-      top: 17px;
-      left: 0;
-      width: 1px;
-      height: 30px;
-      background-color: #fff; }
-    .nav .nav-list > a.our_team::after {
-      content: '';
-      position: absolute;
-      top: 17px;
-      right: 0;
-      width: 1px;
-      height: 30px;
-      background-color: #fff; }
+          border-bottom: 1px dotted #f1c40f; }
+    .nav .nav-list > li:hover {
+      background-color: #1b2223; }
+      .nav .nav-list > li:hover > .nav-list-sec {
+        display: block; }
 
 .location {
   height: 32px;

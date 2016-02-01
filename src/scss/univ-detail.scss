@@ -6,3 +6,117 @@
     height: 69px;
     background-image: url(../images/title_tokyo-univ.png);
 }
+
+.pic img {
+    display: block;
+    margin-bottom: 20px;
+    width: 365px;
+    height: 348px;
+    background-color: #f9f9f9;
+}
+
+.univ-info {
+    @extend %clearfix;
+
+    .stick {
+        float: left;
+        width: 22px;
+    }
+
+    .line {
+
+    }
+}
+
+.univ-info-main {
+    padding-left: 40px;
+
+    header {
+        @extend %clearfix;
+
+        height: 60px;
+
+        h3 {
+            float: left;
+            margin-right: 10px;
+            height: 60px;
+            line-height: 60px;
+        }
+
+        .line {
+            float: left;
+            height: 60px;
+        }
+    }
+
+    p {
+        line-height: 20px;
+        text-indent: 20px;
+    }
+}
+
+.history {
+    .stick {
+        height: 348px;
+        background-image: url(../images/stick_1.jpg);
+    }
+    .line {
+        width: 249px;
+        background-image: url(../images/line_1.png);
+    }
+}
+
+.enrol-time {
+    .stick {
+        height: 125px;
+        background-image: url(../images/stick_2.jpg);
+    }
+    .line {
+        width: 249px;
+        background-image: url(../images/line_2.png);
+    }
+}
+
+.major {
+    .stick {
+        height: 125px;
+        background-image: url(../images/stick_3.jpg);
+    }
+    .line {
+        width: 249px;
+        background-image: url(../images/line_3.png);
+    }
+}
+
+.examination {
+    .stick {
+        height: 125px;
+        background-image: url(../images/stick_4.jpg);
+    }
+    .line {
+        width: 199px;
+        background-image: url(../images/line_4.png);
+    }
+}
+
+.admission {
+    .stick {
+        height: 125px;
+        background-image: url(../images/stick_5.jpg);
+    }
+    .line {
+        width: 216px;
+        background-image: url(../images/line_5.png);
+    }
+}
+
+.char-analys {
+    .stick {
+        height: 317px;
+        background-image: url(../images/stick_6.jpg);
+    }
+    .line {
+        width: 216px;
+        background-image: url(../images/line_6.png);
+    }
+}

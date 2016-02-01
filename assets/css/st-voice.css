@@ -1,8 +1,8 @@
-.list_st-voices:before {
+.list_st-voices:before, .list_st-voices li .st-info .item:before {
   content: "";
   display: table; }
 
-.list_st-voices:after {
+.list_st-voices:after, .list_st-voices li .st-info .item:after {
   content: "";
   display: table;
   clear: both;
@@ -24,7 +24,40 @@
   .list_st-voices li img {
     display: block;
     width: 365px;
-    height: 365px; }
+    height: 324px; }
   .list_st-voices li .st-info {
+    padding: 35px 30px; }
+    .list_st-voices li .st-info .item {
+      height: 24px;
+      line-height: 24px; }
+      .list_st-voices li .st-info .item .item-name {
+        position: relative;
+        float: left;
+        padding-left: 10px;
+        font-weight: bolder; }
+        .list_st-voices li .st-info .item .item-name::before {
+          content: '';
+          position: absolute;
+          top: 50%;
+          left: 0;
+          display: block;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          -webkit-transform: translateY(-50%);
+                  transform: translateY(-50%); }
+      .list_st-voices li .st-info .item .item-content {
+        float: left;
+        margin-left: 10px; }
+  .list_st-voices li:nth-child(odd) .st-info {
     width: 365px;
-    height: 235px; }
+    height: 276px;
+    background-color: #f1fcff; }
+    .list_st-voices li:nth-child(odd) .st-info .item-name::before {
+      background-color: #116b87; }
+  .list_st-voices li:nth-child(even) .st-info {
+    width: 365px;
+    height: 276px;
+    background-color: #fff2f1; }
+    .list_st-voices li:nth-child(even) .st-info .item-name::before {
+      background-color: #a54e43; }

@@ -1,4 +1,58 @@
+.univ-list .list-content:before {
+  content: "";
+  display: table; }
+
+.univ-list .list-content:after {
+  content: "";
+  display: table;
+  clear: both;
+  overflow: hidden; }
+
 .title_jp-univ {
   width: 414px;
   height: 69px;
   background-image: url(../images/title_jp-univ.png); }
+
+.opt {
+  height: 97px; }
+
+.col_left .opt {
+  background-color: #0190bd;
+  box-shadow: 3px 3px 0 0 #00607e; }
+
+.col_right .opt {
+  background-color: #f77b6c;
+  box-shadow: 3px 3px 0 0 #a54e43; }
+
+.univ-list {
+  margin-top: 36px;
+  height: 350px; }
+  .univ-list h3 {
+    height: 60px;
+    background-color: #f1c40f;
+    font-size: 18px;
+    text-align: center;
+    line-height: 60px; }
+  .univ-list .list-content {
+    padding: 20px 30px;
+    background-color: #f9f9f9; }
+  .univ-list ul {
+    float: right;
+    width: 132.5px; }
+    .univ-list ul li {
+      position: relative;
+      padding-left: 15px; }
+      .univ-list ul li::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        border-left: 5px solid #f1c40f;
+        border-top: 5px solid transparent;
+        border-bottom: 5px solid transparent;
+        -webkit-transform: translateY(-50%);
+                transform: translateY(-50%); }
+    .univ-list ul li:not(:last-child) {
+      margin-bottom: 16px; }
+  .univ-list ul:first-child {
+    float: left; }
