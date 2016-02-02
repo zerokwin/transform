@@ -7,8 +7,19 @@
     background-image: url(../images/title_jp-univ.png);
 }
 
+.title_courses {
+    width: 414px;
+    height: 69px;
+    background-image: url(../images/title_courses.png);
+}
+
+.tab {
+    @extend %clearfix;
+}
+
 .opt {
     height: 97px;
+    cursor: pointer;
 }
 
 .col_left .opt {
@@ -21,9 +32,22 @@
     box-shadow: 3px 3px 0 0 #a54e43;
 }
 
+.univ-box {
+    @extend %clearfix;
+
+    display: none;
+    width: 100%;
+}
+
 .univ-list {
+    float: left;
     margin-top: 36px;
+    width: 365px;
     height: 350px;
+
+    &:nth-child(odd) {
+        margin-right: 30px;
+    }
 
     h3 {
         height: 60px;

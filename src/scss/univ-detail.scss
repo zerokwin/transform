@@ -18,9 +18,14 @@
 .univ-info {
     @extend %clearfix;
 
+    position: relative;
+
     .stick {
-        float: left;
+        // float: left;
+        position: absolute;
+        left: 0;
         width: 22px;
+        height: 100%;
     }
 
     .line {
@@ -57,8 +62,9 @@
 
 .history {
     .stick {
-        height: 348px;
-        background-image: url(../images/stick_1.jpg);
+        // height: 348px;
+        background-color: #fffde7;
+        // background-image: url(../images/stick_1.jpg);
     }
     .line {
         width: 249px;
@@ -68,8 +74,9 @@
 
 .enrol-time {
     .stick {
-        height: 125px;
-        background-image: url(../images/stick_2.jpg);
+        // height: 125px;
+        background-color: #fff9c4;
+        // background-image: url(../images/stick_2.jpg);
     }
     .line {
         width: 249px;
@@ -79,8 +86,9 @@
 
 .major {
     .stick {
-        height: 125px;
-        background-image: url(../images/stick_3.jpg);
+        // height: 125px;
+        background-color: #fff59d;
+        // background-image: url(../images/stick_3.jpg);
     }
     .line {
         width: 249px;
@@ -90,8 +98,9 @@
 
 .examination {
     .stick {
-        height: 125px;
-        background-image: url(../images/stick_4.jpg);
+        // height: 125px;
+        background-color: #fff176;
+        // background-image: url(../images/stick_4.jpg);
     }
     .line {
         width: 199px;
@@ -101,8 +110,9 @@
 
 .admission {
     .stick {
-        height: 125px;
-        background-image: url(../images/stick_5.jpg);
+        // height: 125px;
+        background-color: #ffee58;
+        // background-image: url(../images/stick_5.jpg);
     }
     .line {
         width: 216px;
@@ -112,8 +122,9 @@
 
 .char-analys {
     .stick {
-        height: 317px;
-        background-image: url(../images/stick_6.jpg);
+        // height: 317px;
+        background-color: #ffeb3b;
+        // background-image: url(../images/stick_6.jpg);
     }
     .line {
         width: 216px;

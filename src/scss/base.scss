@@ -5,7 +5,9 @@
 .wrap {
     position: relative;
     margin: 0 auto;
-    width: 1400px;
+    min-width: $minwidth;
+    max-width: 1400px;
+    height: 900px;
     color: $clr_text;
 
     @extend %clearfix;
@@ -15,18 +17,23 @@
     position: relative;
     width: 100%;
     height: 900px;
+    overflow: hidden;
 
     .cover {
-        position: absolute;
+        position: relative;;
         z-index: 1;
-        width: 633px;
+        margin: 0 auto;
+        min-width: 1000px;
         height: 900px;
-        background-image: url(../images/cover.png);
+        background: url(../images/large-cover.png) no-repeat center 0;
     }
 
     video {
-        width: 100%;
-        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 1400px;
+        height: 900px;
     }
 }
 
@@ -39,6 +46,7 @@
 }
 
 .container {
+    position: relative;
     margin: 0 auto;
     width: $minwidth;
 }
@@ -100,24 +108,25 @@
             .nav-list-sec {
                 display: none;
                 position: absolute;
-                z-index: 1;
+                z-index: 2;
                 top: 64px;
                 width: 100%;
-                height: 100%;
+                height: 196px;
+                background-color: #1b2223;
 
                 li {
                     padding: 0 20px;
                     width: 100%;
-                    height: 45px;
-                    background-color: #1b2223;
+                    height: 40px;
                     text-align: center;
-                    line-height: 45px;
+                    line-height: 40px;
 
                     a {
                         color: #f1c40f;
                     }
 
-                    &:not(:last-child) a {
+                    // &:not(:last-child)
+                    a {
                         display: block;
                         width: 100%;
                         height: 100%;
@@ -128,7 +137,7 @@
 
             &:hover {
                 background-color: #1b2223;
-                
+
                 > .nav-list-sec {
                     display: block;
                 }
@@ -153,9 +162,23 @@
 }
 
 .main-content {
-    padding: 64px 120px 100px 120px;
-    height: 1000px;
+    margin: 0 auto;
+    padding: 64px 0 100px;
+    width: 1000px;
+    height: 654px;
+    overflow: auto;
     background-color: #fff;
+
+    &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 32px;
+        width: 980px;
+        height: 40px;
+        background-color: #fff;
+    }
 
     h2 {
         margin-left: auto;
@@ -166,6 +189,9 @@
 
     .main-content_inner {
         @extend %clearfix;
+
+        margin: 0 auto;
+        width: 760px;
     }
 }
 

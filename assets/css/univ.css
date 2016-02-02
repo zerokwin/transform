@@ -1,8 +1,8 @@
-.univ-list .list-content:before {
+.tab:before, .univ-box:before, .univ-list .list-content:before {
   content: "";
   display: table; }
 
-.univ-list .list-content:after {
+.tab:after, .univ-box:after, .univ-list .list-content:after {
   content: "";
   display: table;
   clear: both;
@@ -13,8 +13,14 @@
   height: 69px;
   background-image: url(../images/title_jp-univ.png); }
 
+.title_courses {
+  width: 414px;
+  height: 69px;
+  background-image: url(../images/title_courses.png); }
+
 .opt {
-  height: 97px; }
+  height: 97px;
+  cursor: pointer; }
 
 .col_left .opt {
   background-color: #0190bd;
@@ -24,9 +30,17 @@
   background-color: #f77b6c;
   box-shadow: 3px 3px 0 0 #a54e43; }
 
+.univ-box {
+  display: none;
+  width: 100%; }
+
 .univ-list {
+  float: left;
   margin-top: 36px;
+  width: 365px;
   height: 350px; }
+  .univ-list:nth-child(odd) {
+    margin-right: 30px; }
   .univ-list h3 {
     height: 60px;
     background-color: #f1c40f;
