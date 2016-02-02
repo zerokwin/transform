@@ -25,53 +25,11 @@
                 </div>
             </header>
             <nav class="nav">
-                <div class="container">
-                    <ul class="nav-list">
-                        <li>
-                            <a href="" class="jp_univ">
-                                <img src="assets/images/jp_univ.png">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="our_courses">
-                                <img src="assets/images/courses.png">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="online_assessment">
-                                <img src="assets/images/online_assessment.png">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="about_us">
-                                <img src="assets/images/about_us.png">
-                            </a>
-                            <ul class="nav-list-sec">
-                                <li>
-                                    <a href="">经营理念</a>
-                                </li>
-                                <li>
-                                    <a href="">经营历程</a>
-                                </li>
-                                <li>
-                                    <a href="">评资力量</a>
-                                </li>
-                                <li>
-                                    <a href="">学员心声</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="" class="our_team">
-                                <img src="assets/images/our_team.png">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <div class="container"></div>
             </nav>
             <section class="content">
                 <div class="container">
-                    <div class="location">
+                    <div class="crumb">
                         <a href="">1</a> > <a href="">2</a> > <a href="" class="active">3</a>
                     </div>
                     <section class="main-content">
@@ -153,5 +111,53 @@
             </section>
         </section>
     </div>
+
+    <script type="text/javascript" src="assets/js/crumb.min.js"></script>
+    <!-- 前端渲染模板 -->
+    <script type="text/javascript" src="assets/js/template.js"></script>
+    <!-- 导航栏nav模板 -->
+    <script type="text/html" id="nav">
+        <ul class="nav-list">
+            {{each list as item i}}
+                <li>
+                    <a href="{{item.href}}" class="{{item.class}}">
+                        <img src="{{item.imgUrl}}">
+                    </a>
+                    {{if item.subList}}
+                        <ul class="nav-list-sec">
+                            {{each item.subList as subitem i}}
+                                <li>
+                                    <a href="{{subitem.href}}">{{subitem.id}}</a>
+                                </li>
+                            {{/each}}
+                        </ul>
+                    {{/if}}
+                </li>
+            {{/each}}
+        </ul>
+    </script>
+    <!-- 导航栏nav数据 -->
+    <script type="text/javascript" src="assets/js/nav.js"></script>
+
+    <!-- 面包屑 -->
+    <script type="text/javascript">
+        transform.setCrumb({
+            top: {
+                id: 'Top',
+                href: '#'
+            },
+            second: {
+                id: 'Second',
+                href: '#'
+            },
+            third: {
+                id: 'Third',
+                href: '#'
+            },
+            forth: {
+                id: 'Forth'
+            }
+        });
+    </script>
 </body>
 </html>

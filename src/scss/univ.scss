@@ -35,8 +35,11 @@
 .univ-box {
     @extend %clearfix;
 
-    display: none;
     width: 100%;
+}
+
+.univ-box_2 {
+    display: none;
 }
 
 .univ-list {
@@ -61,12 +64,13 @@
         @extend %clearfix;
 
         padding: 20px 30px;
+        height: 294px;
         background-color: #f9f9f9;
     }
 
     ul {
         float: right;
-        width: (365px - 100px) / 2;
+        width: (365px - 80px) / 2;
 
         li {
             position: relative;

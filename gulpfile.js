@@ -41,6 +41,18 @@ const src = {
 
         'jquery' : [
             'src/vender/jquery/dist/jquery.js'
+        ],
+
+        'template' : [
+            'src/vender/artTemplate/dist/template.js'
+        ],
+
+        'nav' : [
+            'src/js/nav.js'
+        ],
+
+        'crumb' : [
+            'src/js/crumb.js'
         ]
     }
 
@@ -119,7 +131,7 @@ gulp.task('watch', () => {
 
     gulp.watch('src/scss/**/*.scss', ['styles']);
 
-    gulp.watch('src/scripts/**/*.js', (e) => {
+    gulp.watch('src/js/**/*.js', (e) => {
         filterPath(e);
         gulp.start('scripts');
     });

@@ -31,8 +31,10 @@
   box-shadow: 3px 3px 0 0 #a54e43; }
 
 .univ-box {
-  display: none;
   width: 100%; }
+
+.univ-box_2 {
+  display: none; }
 
 .univ-list {
   float: left;
@@ -49,10 +51,11 @@
     line-height: 60px; }
   .univ-list .list-content {
     padding: 20px 30px;
+    height: 294px;
     background-color: #f9f9f9; }
   .univ-list ul {
     float: right;
-    width: 132.5px; }
+    width: 142.5px; }
     .univ-list ul li {
       position: relative;
       padding-left: 15px; }

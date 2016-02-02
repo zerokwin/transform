@@ -147,14 +147,16 @@
     }
 }
 
-.location {
+.crumb {
     height: 32px;
     line-height: 30px;
 
     a {
         color: #303030;
         text-decoration: underline;
+        transition: color .25s ease;
 
+        &:hover,
         &.active {
             color: $clr_hover;
         }

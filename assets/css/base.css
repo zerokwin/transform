@@ -293,13 +293,14 @@ ol {
       .nav .nav-list > li:hover > .nav-list-sec {
         display: block; }
 
-.location {
+.crumb {
   height: 32px;
   line-height: 30px; }
-  .location a {
+  .crumb a {
     color: #303030;
-    text-decoration: underline; }
-    .location a.active {
+    text-decoration: underline;
+    transition: color .25s ease; }
+    .crumb a:hover, .crumb a.active {
       color: #08b9bf; }
 
 .main-content {
