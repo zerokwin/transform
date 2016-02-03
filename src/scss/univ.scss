@@ -66,6 +66,10 @@
         padding: 20px 30px;
         height: 294px;
         background-color: #f9f9f9;
+
+        a {
+            color: $clr_text;
+        }
     }
 
     ul {

@@ -53,6 +53,8 @@
     padding: 20px 30px;
     height: 294px;
     background-color: #f9f9f9; }
+    .univ-list .list-content a {
+      color: #1b2223; }
   .univ-list ul {
     float: right;
     width: 142.5px; }
