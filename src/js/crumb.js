@@ -2,12 +2,6 @@ const transform = (() => {
 
     return {
 
-        // setCrumb(obj) {
-        //     let html = '';
-        //     html = `<a href="/index.html">首页</a> > <a href="${obj.second.href}">${obj.second.id}</a> > <a href="${obj.third.href}">${obj.third.id}</a> > <span>${obj.forth.id}</span>`
-        //     document.querySelector('.crumb').innerHTML = html;
-        // }
-
         setCrumb(obj) {
             var span = document.createElement('span');
             var txt = document.createTextNode(obj.id);
