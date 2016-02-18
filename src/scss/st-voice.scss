@@ -1,11 +1,11 @@
 @import "config";
 @import "mixins";
 
-.title_st-voices {
-    width: 414px;
-    height: 69px;
-    background-image: url(../images/title_studentvoices.png);
-}
+// .title_st-voices {
+//     width: 414px;
+//     height: 69px;
+//     background-image: url(../images/title_studentvoices.png);
+// }
 
 .list_st-voices {
     @extend %clearfix;

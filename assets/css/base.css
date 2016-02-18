@@ -323,6 +323,8 @@ ol {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 32px;
+    width: 414px;
+    height: 69px;
     font-size: 0; }
   .main-content .main-content_inner {
     margin: 0 auto;

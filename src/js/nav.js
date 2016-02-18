@@ -3,13 +3,13 @@ const data = {
         {
             id: '日本的大学',
             class: 'jp_univ',
-            href: '#',
+            href: '/univ.html',
             imgUrl: 'assets/images/jp_univ.png'
         },
         {
             id: '我们的课程',
             class: 'our_courses',
-            href: '#',
+            href: '/our-course.html',
             imgUrl: 'assets/images/courses.png'
         },
         {
@@ -31,7 +31,7 @@ const data = {
                 },
                 {
                     id: '经营历程',
-                    href: '#'
+                    href: '/history.html'
                 },
                 {
                     id: '评资力量',
@@ -39,7 +39,7 @@ const data = {
                 },
                 {
                     id: '学员心声',
-                    href: '#'
+                    href: '/student-voices.html'
                 }
             ]
         },

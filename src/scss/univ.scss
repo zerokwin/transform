@@ -1,18 +1,6 @@
 @import "config";
 @import "mixins";
 
-.title_jp-univ {
-    width: 414px;
-    height: 69px;
-    background-image: url(../images/title_jp-univ.png);
-}
-
-.title_courses {
-    width: 414px;
-    height: 69px;
-    background-image: url(../images/title_courses.png);
-}
-
 .tab {
     @extend %clearfix;
 }

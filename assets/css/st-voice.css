@@ -8,11 +8,6 @@
   clear: both;
   overflow: hidden; }
 
-.title_st-voices {
-  width: 414px;
-  height: 69px;
-  background-image: url(../images/title_studentvoices.png); }
-
 .list_st-voices li {
   float: left;
   margin-bottom: 30px;

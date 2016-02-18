@@ -30,10 +30,13 @@
             <section class="content">
                 <div class="container">
                     <div class="crumb">
-                        <!-- <a href="">1</a> > <a href="">2</a> > <a href="" class="active">3</a> -->
+                        <a href="/index.html">首页</a> > <span>日本的大学</span>
                     </div>
                     <section class="main-content">
-                        <h2 class="title_jp-univ">JAPANESE UNIV.</h2>
+                        <h2 class="title_jp-univ">
+                            <img src="assets/images/title_jp-univ.png" alt="JAPANESE UNIV." />
+                            JAPANESE UNIV.
+                        </h2>
                         <div class="main-content_inner">
                             <div class="tab">
                                 <div class="col col_left">
@@ -269,25 +272,6 @@
                     store = i;
                     $univBox.eq(i).fadeIn();
                 });
-            });
-
-            <!-- 面包屑 -->
-            transform.setCrumb({
-                top: {
-                    id: 'Top',
-                    href: '#'
-                },
-                second: {
-                    id: 'Second',
-                    href: '#'
-                },
-                third: {
-                    id: 'Third',
-                    href: '#'
-                },
-                forth: {
-                    id: 'Forth'
-                }
             });
         })();
     </script>
